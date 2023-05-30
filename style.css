@@ -72,6 +72,18 @@ li {
   align-items: center;
   gap: 3.2rem;
 }
+
+.grid {
+  display: grid;
+
+  row-gap: 8rem;
+  column-gap: 6.4rem;
+}
+
+.grid--three--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .btn {
   display: inline-block;
   padding: 1.6rem 2.4rem;
@@ -99,6 +111,32 @@ li {
 .btn-light:hover,
 .btn-light:active {
   box-shadow: 0 0 0 2px hsl(28, 80%, 58%);
+}
+
+.padding-bottom {
+  padding-bottom: 80rem;
+}
+
+.small-heading {
+  color: #e67e22;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1.8rem;
+}
+
+.med-heading,
+.tertiary-heading {
+  color: #333;
+}
+
+.med-heading {
+  font-size: 4.4rem;
+}
+
+.tertiary-heading {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
 }
 
 /*
@@ -131,6 +169,10 @@ li {
   padding: 1.2rem 2.4rem;
 }
 
+.logo-img {
+  width: 150px;
+}
+
 /*
 *******************************
 *    hero section              *
@@ -146,14 +188,15 @@ li {
   justify-content: center;
   align-items: center;
   max-width: 1300px;
-  margin: 0px auto;
+  margin: 0 auto 9.6rem auto;
   padding: 4.8rem 3.2rem;
   gap: 6.4rem;
 }
 
 .main-heading {
   font-size: 5.2rem;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
+  line-height: 1.05;
   color: #222222;
   margin-bottom: 3.2rem;
 }
@@ -195,4 +238,74 @@ li {
 
 .hero-image img {
   width: 100%;
+}
+
+/*
+*******************************
+*    how it works section     *
+******************************* 
+*/
+
+.how-it-works-main {
+  max-width: 1200px;
+  /* background-color: #fdf2e9; */
+  margin: 9.6rem auto;
+}
+
+.works-text {
+  margin-bottom: 9.6rem;
+}
+
+.number {
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #ccc;
+  margin-bottom: 1.6rem;
+}
+
+.section2-description {
+  line-height: 1.7;
+  font-size: 1.8rem;
+}
+
+.grid--two--cols {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works-main figure {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.how-it-works-main img {
+  width: 35%;
+}
+
+.how-it-works-main figure::after,
+.how-it-works-main figure::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.how-it-works-main figure::after {
+  z-index: -2;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+
+.how-it-works-main figure::before {
+  z-index: -1;
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
 }
