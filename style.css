@@ -39,6 +39,7 @@
 
 :root {
   font-size: 62.5%;
+  scroll-behavior: smooth !important;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -105,12 +106,13 @@ li {
 .btn-light {
   background-color: #fff;
   color: #555;
-  transition: box-shadow 400ms;
+  transition: all 400ms;
 }
 
 .btn-light:hover,
 .btn-light:active {
-  box-shadow: 0 0 0 2px hsl(28, 80%, 58%);
+  box-shadow: inset 0 0 0 2px white;
+  background-color: #fdf2e9;
 }
 
 .padding-bottom {
@@ -118,8 +120,8 @@ li {
 }
 
 .small-heading {
-  color: #e67e22;
-  font-size: 1.8rem;
+  color: hsl(28, 80%, 45%);
+  font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 1.8rem;
@@ -249,7 +251,8 @@ li {
 .how-it-works-main {
   max-width: 1200px;
   /* background-color: #fdf2e9; */
-  margin: 9.6rem auto;
+  margin: 0rem auto 9.6rem;
+  padding: 1.6rem;
 }
 
 .works-text {
@@ -283,6 +286,7 @@ li {
 
 .how-it-works-main img {
   width: 35%;
+  /* filter: grayscale(10%); */
 }
 
 .how-it-works-main figure::after,
@@ -308,4 +312,237 @@ li {
   width: 45%;
   padding-bottom: 45%;
   background-color: #fae5d3;
+}
+
+/*
+*******************************
+*    Featured in section      *
+******************************* 
+*/
+
+.featured-in-container {
+  max-width: 1200px;
+  margin: 0px auto 9.8rem;
+}
+
+.featured-in-logos img {
+  height: 3rem;
+  filter: brightness(0%);
+  opacity: 50%;
+}
+
+.featured-in-heading {
+  font-size: 1.6rem;
+  color: #999;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.featured-in-logos.flex {
+  justify-content: space-around;
+}
+
+/*
+*******************************
+*        Meals section        *
+******************************* 
+*/
+
+.meal-section {
+  margin-bottom: 6.8rem;
+}
+.meal-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  color: #555;
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.meal-card {
+  transition: all 0.4s;
+}
+.meal-card:hover {
+  transform: translateY(-2rem);
+}
+.meal-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4.8rem;
+}
+
+.meal-card {
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 1rem 15px 0px rgba(1, 1, 1, 0.389); */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.meal-tag {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222222;
+  text-transform: uppercase;
+
+  display: inline-block;
+  border-radius: 100px;
+  padding: 0.4rem 0.8rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 1.2rem;
+}
+
+.meal-tag.tag-dg {
+  background-color: #40c057;
+}
+
+.meal-tag.tag-lg {
+  background-color: #a9e34b;
+}
+
+.meal-tag.tag-y {
+  background-color: #fcc419;
+}
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 2.4rem;
+}
+
+.meals-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.meals-attributes li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.meals-attributes li {
+  font-size: 1.8rem;
+}
+
+.meal-padding {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.io-icons {
+  color: #e67e22;
+}
+
+.meals-diet ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.meals-diet li {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.meals-diet span {
+  font-size: 1.8rem;
+}
+
+.io-icons {
+  width: 3rem;
+  height: 3rem;
+}
+
+.meal-link {
+  margin-top: 3.6rem;
+  text-align: center;
+}
+
+.meal-link a:link,
+.meal-link a:visited {
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  font-size: 1.8rem;
+  transition: all 300ms;
+}
+
+.meal-link a:hover,
+.meal-link a:active {
+  border-bottom-color: transparent;
+}
+
+/*
+*******************************
+*     testimonial section     *
+******************************* 
+*/
+.testimonial-section {
+  padding: 6.8rem 1.6rem 6.8rem 6.8rem;
+  background-color: #fdf2e9;
+}
+
+.testimonial-container {
+  display: grid;
+  gap: 2.4rem;
+  grid-template-columns: 55fr 45fr;
+}
+
+.testimonial-heading {
+  font-size: 3.2rem;
+  color: #222222;
+  line-height: 1.1;
+  margin-bottom: 6.8rem;
+}
+
+.cus-testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 6.4rem;
+}
+
+.testimonial-customer figure {
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-customer img {
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.customer-testimonial {
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
+  color: #555;
+}
+.customer-name {
+  color: #666;
+}
+
+.grid-images img {
+  width: 100%;
+  display: block;
+  transition: all 400ms;
+}
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.grid-images figure {
+  overflow: hidden;
+}
+
+.grid-images img:hover {
+  transform: scale(1.1);
 }
