@@ -1,0 +1,167 @@
+/*
+************************************
+*       1296px large screens       *
+************************************
+*/
+
+@media (max-width: 81em) {
+  .main-hero-section {
+    max-width: 120rem;
+  }
+
+  .main-heading {
+    font-size: 4.8rem;
+  }
+
+  .grid-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
+    align-self: center;
+  }
+  .cus-testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-customer {
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid hsl(28, 70%, 80%);
+  }
+
+  .testimonial-customer:last-child {
+    border: none;
+  }
+}
+
+/*
+************************************
+* below 1200px (landscape tablets) *
+************************************
+*/
+
+@media (max-width: 75em) {
+  :root {
+    font-size: 56.25%;
+  }
+
+  .med-heading {
+    font-size: 3.6rem;
+  }
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+  .meal-grid {
+    column-gap: 3.2rem;
+    padding: 1.6rem;
+  }
+
+  .price-card-container {
+    gap: 3.6rem;
+  }
+  .price-card {
+    padding: 3.6rem;
+  }
+  .price-best-value::after {
+    top: 8%;
+  }
+}
+
+/*
+************************************
+* below 980px (tablets)            *
+************************************
+*/
+
+@media (max-width: 61.25em) {
+  :root {
+    /*  (8 / 16)*100 = 50% */
+    font-size: 50%;
+  }
+
+  .main-hero-section {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+  .hero-text-main {
+    max-width: 700px;
+    text-align: center;
+
+    margin: 0px auto;
+  }
+
+  .hero-btn {
+    margin-bottom: 3rem;
+  }
+
+  .hero-btn,
+  .cus-images {
+    justify-content: center;
+  }
+  .hero-image {
+    width: 60%;
+    justify-self: center;
+  }
+  .featured-in-logos img {
+    height: 2.4rem;
+  }
+  .number {
+    font-size: 7.4rem;
+  }
+  .meal-padding {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+  .cus-testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 8rem;
+    row-gap: 4.8rem;
+  }
+  .grid-images {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+  .testimonial-customer {
+    border-bottom: none;
+    padding: 0px 4.8rem 0px 0rem;
+  }
+
+  .price-best-value::after {
+    top: 7%;
+    right: -22%;
+  }
+
+  .form-container {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-container figure {
+    background-position-x: center;
+  }
+  .form-text {
+    padding: 3.8rem 5.4rem 5.4rem 5.4rem;
+  }
+}
+
+/* 
+font sizes (px)
+   10 / 12/ 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98  
+
+-- font weight
+ default 400
+
+-- Line height
+ default 1
+
+- spacing system (px)
+
+ 2 / 4/ 8 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+  */
