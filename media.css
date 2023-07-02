@@ -70,7 +70,7 @@
 
 /*
 ************************************
-* below 980px (tablets)            *
+* below 980px (tablet)            *
 ************************************
 */
 
@@ -148,6 +148,242 @@
   }
   .form-text {
     padding: 3.8rem 5.4rem 5.4rem 5.4rem;
+  }
+  .nav-btn {
+    display: block;
+  }
+  .flex-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translate(100%);
+    /* transition will not work o display none property */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .open-nav .flex-nav {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    transform: translate(0%);
+  }
+
+  .header-nav-link:link,
+  .header-nav-link:visited,
+  .btn.btn-fill.small-btn {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .nav-btn {
+    z-index: 2;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .close-icon {
+    display: none;
+  }
+
+  .open-nav .menu-icon {
+    display: none;
+  }
+  .open-nav .close-icon {
+    display: block;
+  }
+  /*  */
+}
+
+/*
+************************************
+* below 840px (tablet)            *
+************************************
+*/
+
+@media (max-width: 58.75em) {
+  .price-card {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .pros-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 2.4rem;
+    max-width: 800px;
+  }
+  .price-pros {
+    padding: 0 1rem;
+    /* justify-self: center; */
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .span3 {
+    grid-column: span 3;
+  }
+
+  .span2 {
+    grid-column: span 2;
+  }
+  .copywrite {
+    margin: 0;
+  }
+}
+
+/*
+************************************
+*           below 760px            *
+************************************
+*/
+
+@media (max-width: 47.5em) {
+  .meal-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 3rem;
+  }
+  .meal-card {
+    max-width: 280px;
+  }
+  .meal-card-one {
+    justify-self: right;
+  }
+  .meals-diet {
+    grid-column: span 2;
+    justify-self: center;
+    /* justify-self: right; */
+  }
+}
+
+/*
+************************************
+*  below 640px (mobile view)       *
+************************************
+*/
+
+@media (max-width: 40em) {
+  .featured-in-logos img {
+    width: 100%;
+    height: 100%;
+  }
+  .flex {
+    gap: 2.4rem;
+  }
+  .grid--two--cols {
+    grid-template-columns: 1fr;
+  }
+  .figure1 {
+    grid-row: 1/2;
+  }
+  .figure3 {
+    grid-row: 5/6;
+  }
+  .meal-grid {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+
+  .grid-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .meals-diet {
+    grid-column: span 1;
+  }
+  .meal-card {
+    justify-self: center;
+  }
+
+  .testimonial-section {
+    padding: 6.8rem 3.2rem;
+  }
+
+  .cus-testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card-container {
+    grid-template-columns: 1fr;
+  }
+  .price-card {
+    justify-self: center;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-image {
+    padding: 30%;
+    grid-row: 1/2;
+  }
+  .form-container figure {
+    background-position: center;
+  }
+
+  .images {
+    display: flex;
+  }
+  .hero-image {
+    width: 80%;
+  }
+  .price-description {
+    padding: 0rem 1rem;
+    line-height: 1.6;
+  }
+
+  .how-it-works-main figure::after {
+    z-index: -2;
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+  }
+  .how-it-works-main figure::after,
+  .how-it-works-main figure::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  .how-it-works-main figure::before {
+    z-index: -1;
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+  }
+  element {
+    transform: translateY(2.4rem);
+  }
+  .how-it-works-main figure {
+    /* it translates the element without affecting other like it will not move other elemets with itself */
+    transform: translateY(4.2rem);
+  }
+}
+
+/* 430 px */
+
+@media (max-width: 28.125em) {
+  .pros-grid {
+    grid-template-columns: 1fr;
+  }
+  .price-pros {
+    padding: 2.4rem 1.2rem;
+  }
+  .grid-images {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

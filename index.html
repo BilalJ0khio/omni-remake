@@ -16,8 +16,8 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="main-nav">
+    <header class="">
+      <nav class="main-nav open-nav">
         <figure>
           <img
             class="logo-img"
@@ -26,13 +26,18 @@
             width="120"
           />
         </figure>
-        <ul class="flex">
+        <ul class="flex flex-nav">
           <li><a href="#" class="header-nav-link">How it works</a></li>
           <li><a href="#" class="header-nav-link">Meals</a></li>
           <li><a href="#" class="header-nav-link">Testimonials</a></li>
           <li><a href="#" class="header-nav-link">Pricing</a></li>
           <li><a href="#" class="btn btn-fill small-btn">Try for free</a></li>
         </ul>
+
+        <button class="nav-btn">
+          <ion-icon class="menu-icon" name="menu"></ion-icon>
+          <ion-icon class="close-icon" name="close"></ion-icon>
+        </button>
       </nav>
     </header>
 
@@ -158,7 +163,7 @@
               </div>
             </div>
 
-            <figure>
+            <figure class="figure1">
               <img
                 src="img/app/app-screen-1.png"
                 width="200px"
@@ -168,7 +173,7 @@
 
             <!-- 2nd screen -->
 
-            <figure>
+            <figure class="figure2">
               <img
                 src="img/app/app-screen-2.png"
                 width="200px"
@@ -197,7 +202,7 @@
                 can change delivery schedule and address daily!
               </div>
             </div>
-            <figure>
+            <figure class="figure3">
               <img
                 src="img/app/app-screen-3.png"
                 width="200px"
@@ -216,7 +221,7 @@
           </div>
 
           <div class="meal-grid">
-            <div class="meal-card">
+            <div class="meal-card meal-card-one">
               <figure>
                 <img
                   src="img/meals/meal-1.jpg"
@@ -665,7 +670,7 @@
               <button class="cta-btn" href="#">Sign up now</button>
             </form>
           </div>
-          <figure>
+          <figure class="form-image">
             <!-- <img src="img/" alt="" /> -->
           </figure>
         </div>
@@ -674,7 +679,7 @@
 
     <footer class="footer-section">
       <div class="footer-container">
-        <div class="footer-logo">
+        <div class="footer-logo span3">
           <figure>
             <img
               src="img/omnifood-logo.png"
@@ -698,7 +703,7 @@
             Copyright © 2027 by Omnifood, Inc. All rights reserved.
           </div>
         </div>
-        <div>
+        <div class="span3">
           <p class="heading">Contact us</p>
           <address class="address">
             <div>623 Harrison St., 2nd Floor, San Francisco, CA 94107</div>
@@ -708,7 +713,7 @@
             >
           </address>
         </div>
-        <div>
+        <div class="span2">
           <p class="heading">Account</p>
           <div class="links">
             <a href="#">Create account</a>
@@ -717,7 +722,7 @@
             <a href="#">Android app</a>
           </div>
         </div>
-        <div>
+        <div class="span2">
           <p class="heading">Company</p>
           <div class="links">
             <a href="#">About Omnifood</a>
@@ -726,7 +731,7 @@
             <a href="#">Careers</a>
           </div>
         </div>
-        <div>
+        <div class="span2">
           <p class="heading">Resources</p>
           <div class="links">
             <a href="#">Recipe directory </a>
