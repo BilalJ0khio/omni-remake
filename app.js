@@ -68,4 +68,5 @@ const observer = new IntersectionObserver(
     rootMargin: "-70px",
   }
 );
+
 observer.observe(sectionHeroEl);
