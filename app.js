@@ -33,6 +33,29 @@ btnNavEle.addEventListener("click", function () {
   navEle.classList.toggle("open-nav");
 });
 
+// nav auto close
+
+// const allAnchor = document.getElementsByClassName("header-nav-link:link");
+// allAnchor.addEventListener("click", function () {
+//   navEle.classList.toggle("open-nav");
+// });
+
+const headerAnchor = document.querySelectorAll(".header-nav-link:link");
+const headerbtn = document.querySelector(".header-btn");
+
+headerbtn.addEventListener("click", function () {
+  navEle.classList.toggle("open-nav");
+});
+
+console.log(headerAnchor.length);
+
+for (var i = 0, len = headerAnchor.length; i < len; i++) {
+  // elements[i].style ...
+  headerAnchor[i].addEventListener("click", function () {
+    navEle.classList.toggle("open-nav");
+  });
+}
+
 //  for smooth scrolling maslo in safari incase
 
 // const allLinks = document.querySelectorAll("a:link");
